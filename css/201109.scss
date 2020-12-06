@@ -37,7 +37,7 @@ p{
         opacity: 0.5;
         font-family: $font-main;
         li{
-            padding:0px 50px;
+            padding:0px 25px;
             display: inline;
             border-right: 1px solid rgba(225,225,225,0.3);
             &:last-child{
@@ -103,8 +103,11 @@ p{
             padding-top: 2px;
             display: none;
         }
-        .en{}
+        li{
+            height: 45px;
+        }
         a{
+            height: 45px;
             display: block;
             padding-top: $base;
          padding-bottom: $base;
@@ -130,11 +133,13 @@ p{
     position: fixed;
     top: 0;
     z-index:9; 
+    padding-top: $baseL;
+    padding-bottom: $baseL;
     .letterX{
         width: 14px;
         position: absolute;
         left: 180px;
-        top: 6px;
+        top: $baseL + $baseM/4;
         opacity: 0.5;
     }
 }
@@ -157,12 +162,33 @@ p{
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
+    #trilogo{
+        padding-top: $baseM*2;
+        padding-bottom: $baseM*2;
+        .letterX{
+            top: $baseM*2 + $baseM/4;
+        }
+    }
+    #footer{
+        ul{
+            li{
+                padding: 5px 0px;
+                display: block;
+                border:none;
+            }
+        } 
+    }
+    .back2top{
+        position: fixed;
+        left: 1rem;
+        bottom:  1rem;
+    }
     .openMenu{
         width: 25px;
         display: block;
         position: fixed;
         right: 15px;
-        top: 50px;
+        top: $baseM*2;
     }
     .TriMenu{
         @include css3-transition(); 
@@ -182,10 +208,12 @@ p{
         }
         ul.mainMenu{
             width: 200px;
+            
           li{
             display: block;
             float: left;
             width: 100%;
+            height: 45px;
               a{
                   height: 45px;
                   color:white;
