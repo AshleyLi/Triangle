@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&family=Noto+Serif+TC:wght@200&display=swap");
+.red {
+  background-color: red;
+}
+
+p {
+  margin: 0 0 2em 0;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+/*==================== NAVIGATION ======================*/
+#footer {
+  background-color: #333333;
+}
+
+#footer ul {
+  text-align: center;
+  color: white;
+  padding: 25px 0;
+  font-weight: 400;
+  text-shadow: 0px 2px #000;
+  letter-spacing: 4px;
+  margin: 0;
+  font-size: 0.8rem;
+  opacity: 0.5;
+  font-family: "Noto Sans TC";
+}
+
+#footer ul li {
+  padding: 0px 50px;
+  display: inline;
+  border-right: 1px solid rgba(225, 225, 225, 0.3);
+}
+
+#footer ul li:last-child {
+  border: none;
+}
+
+#footer ul li b {
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+
+.tran {
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.portfolio .pItem a {
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.portfolio .pItem a:hover img {
+  opacity: 0.75;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.back2top {
+  bottom: 80px;
+  opacity: 0.5;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.back2top div.img {
+  display: inline-block;
+  background-image: url("../images/236x54/trianglelogo-B.png");
+  width: 29px;
+  height: 23px;
+  background-position: left top;
+  background-size: cover;
+}
+
+.back2top:hover {
+  color: inherit;
+  opacity: 1;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.TriMenu {
+  position: fixed;
+  z-index: 1208;
+  top: 110px;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.TriMenu .mainMenu .cht {
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.25rem;
+  opacity: 0;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  position: absolute;
+  left: 0;
+  padding-top: 2px;
+  display: none;
+}
+
+.TriMenu .mainMenu a {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: inherit;
+  width: 100px;
+}
+
+.TriMenu .mainMenu a:hover .cht {
+  display: inline;
+  opacity: 1;
+}
+
+.TriMenu .mainMenu a:hover .en {
+  display: none;
+  opacity: 0;
+}
+
+#trilogo {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
+#trilogo .letterX {
+  width: 14px;
+  position: absolute;
+  left: 180px;
+  top: 6px;
+  opacity: 0.5;
+}
+
+#navigation {
+  height: 130px;
+}
+
+.mr-t-s {
+  margin-top: 10px;
+}
+
+.mr-t-m {
+  margin-top: 20px;
+}
+
+.mr-t-L {
+  margin-top: 50px;
+}
+
+.mr-b-s {
+  margin-bottom: 10px;
+}
+
+.mr-b-m {
+  margin-bottom: 20px;
+}
+
+.mr-b-L {
+  margin-bottom: 50px;
+}
+
+.openMenu {
+  display: none;
+  z-index: 99999;
+  position: relative;
+  cursor: pointer;
+}
+
+@media (max-width: 575.98px) {
+  .openMenu {
+    width: 25px;
+    display: block;
+    position: fixed;
+    right: 15px;
+    top: 50px;
+  }
+  .TriMenu {
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+  }
+  .TriMenu #jspCloseMenu {
+    background-image: url("../images/letter-x-white.svg");
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 2rem auto;
+  }
+  .TriMenu ul.mainMenu {
+    width: 200px;
+  }
+  .TriMenu ul.mainMenu li {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+  .TriMenu ul.mainMenu li a {
+    height: 45px;
+    color: white;
+    display: block;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+  .TriMenu ul.mainMenu li a:active {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .TriMenu ul.mainMenu li a .cht {
+    padding-top: 0px;
+  }
+  .TriMenu ul.mainMenu li span {
+    text-align: center;
+    display: block;
+    float: left;
+    width: 100%;
+  }
+  .TriMenu ul.mainMenu li span.cht {
+    position: relative;
+  }
+  .TriMenu ul.mainMenu li:nth-child(6) a {
+    border: none;
+  }
+  .TriMenu ul.mainMenu li:nth-child(8) {
+    margin-top: 50px;
+  }
+  .TriMenu ul.mainMenu li:last-child a {
+    border: none;
+  }
+}
+/*# sourceMappingURL=201109.css.map */

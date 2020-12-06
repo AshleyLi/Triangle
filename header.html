@@ -1,0 +1,77 @@
+<div id="navigation" class="row" >
+  <!-- LOGO -->
+  <div id="trilogo" class="col-lg-12 mr-t-L mr-b-L" >
+    <a href="interior.html" class="logo"></a>
+    <img src="images/letter-x.svg" class="letterX" alt="">
+  </div>
+  <!-- MENU -->
+  <a id="jspOpenMenu" class="openMenu">
+    <img src="images/icon_menu.svg" alt="點擊了解叁角">
+    </a>
+
+  </div>
+  <div class="TriMenu">
+    <a href="#" id="jspCloseMenu"  alt="關閉菜單"></a>
+    <ul class="mainMenu">
+      <li>
+        <a href="about.html">
+          <span class="en">About</span>
+          <span class="cht">關於叁角</span>
+        </a>
+      </li>
+      <li>
+        <a href="interior.html">
+          <span class="en">Interior</span>
+          <span class="cht">室內設計</span>
+        </a>
+      </li>
+      <li>
+        <a href="brand.html">
+          <span class="en">Brand</span>
+          <span class="cht">品牌設計</span>
+        </a>
+      </li>
+      <li>
+        <a href="archi.html">
+          <span class="en">Archi</span>
+          <span class="cht">建築設計</span>
+        </a>
+      </li>
+      <li>
+        <a href="team.html">
+          <span class="en">Team</span>
+          <span class="cht">團隊</span>
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">
+          <span class="en">Contact</span>
+          <span class="cht">聯絡我們</span>
+        </a>
+      </li>
+      <li>
+        <hr class="hideThis" />
+      </li>
+      <li>
+        <a href="">Facebook</a>
+      </li>
+      <li>
+        <a href="">IG</a>
+      </li>
+      <li>
+        <a href="">LINE</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  //Opne menu
+  $(".openMenu").click(function() {
+        $(".TriMenu").css('display', 'block');
+    });
+  //close menu
+  $("#jspCloseMenu").click(function() {
+        $(".TriMenu").css('display', 'none');
+    }); 
+</script>

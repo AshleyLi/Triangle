@@ -1,0 +1,11 @@
+<script>
+    $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if(scroll >= 150) {
+        $("#header").addClass("scrollNow");
+    } else {
+        $("#header").removeClass("scrollNow");
+    }
+});
+  </script>
