@@ -228,6 +228,9 @@ p {
 }
 
 @media (max-width: 575.98px) {
+  p {
+    font-size: 1.25rem !important;
+  }
   #trilogo {
     padding-top: 40px;
     padding-bottom: 40px;
