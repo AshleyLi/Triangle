@@ -6,8 +6,21 @@
 
 p {
   margin: 0 0 2em 0;
-  font-size: 1rem;
-  line-height: 2.5rem;
+  font-size: 1em;
+  line-height: 2.5em;
+}
+
+#about .project-info {
+  padding: 3rem;
+}
+
+#about img.logo {
+  display: inline-block;
+  background-image: url(../images/236x54/trianglelogo-B.png);
+  width: 29px;
+  height: 23px;
+  background-position: left top;
+  background-size: cover;
 }
 
 .project-info {

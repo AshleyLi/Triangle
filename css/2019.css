@@ -50,9 +50,3 @@ hr.max{ margin: 5rem 0;}
 hr{  margin: 2rem 0;}
 .hideThis{visibility: hidden;}
 
-.project-info{ font-size: 12px;  }
-
-.project-info.left > span{ display: block;}
-
-  .fb-comments > span > iframe{ height: 300px;}
-  .fb_iframe_widget{ margin-bottom: 0.75rem;}
