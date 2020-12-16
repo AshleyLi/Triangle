@@ -25,7 +25,7 @@ $(document).ready(function () {
 });
 
 function repositionMenu() {
-    if ($(window).width() >= 576)  {
+    if ($(window).width() >= deviceLine)  {
         // 若為非手機裝置
         // 取得container左側邊線
         var totalW = $(window).width() / 2 + $(".container-fluid").width() / 2 - $(".TriMenu").width();

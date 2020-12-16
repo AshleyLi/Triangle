@@ -18,9 +18,34 @@ $timeMin:0.5s;
 }
 p{
     margin: 0 0 2em 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 2.5rem;
 }
+// project
+.project-info{ 
+    
+    border: 1px solid #aaa;
+    padding:1em;
+    
+    & > p{
+        line-height: 2em;
+        font-size: 12px;
+        margin: 1em 0px;
+        &:first-child{
+            margin-top: 0px;
+        }
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+    &.left {
+        border:none;
+        span{ display: block;}
+        .fb-comments > span > iframe{ height: 300px;}
+        .fb_iframe_widget{ margin-bottom: 0.75rem;}
+    }
+}
+
 
 /*==================== NAVIGATION ======================*/
 #footer{
