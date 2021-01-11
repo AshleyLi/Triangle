@@ -39,6 +39,22 @@
         .fb_iframe_widget span iframe[style] {
             width: 100% !important;
         }
+
+        ul.lang{
+            float: left; 
+            width: 100%;
+            margin: 0px 0px 3em 0px;
+            padding:0px;
+        }
+        ul.lang > li{    
+            display: inline-block;
+            border-left: 1px solid #ccc;
+            padding: 0px 1em;}
+        ul.lang > li:first-child{
+            border-left: none;
+            padding-left: 0;
+
+        }
     </style>
 </head>
 
@@ -59,8 +75,11 @@
         <div class="row mr-b-L">
 
             <div class="col-12 col-sm-8  col-md-6 offset-md-2" id="about">
-                <div class="project-info jspAboutCHT">
-                    <img class="logo" alt="">
+                <div class="project-info">
+                    <ul class="lang">
+                        <li><a href="#" class="jsp2cht">ZH-TW</a></li>
+                        <li><a href="#" class="jsp2en">EN</a></li>
+                    </ul>
                     <div class="jspAboutCHT">
                         <p>
                             空間意義與形式的流動，在此融合成有機的渾圓。經過淬鍊、再沈澱，終還原出「涉」（shibui）的雅質況味；使細節，亦是部分組成的全然的空氣，全然脫開塵囂。走過一天的喧嘩，回歸至此空間，可緩慢吸吐悠靜原真的生活。叁角設計是源於台灣的專業全方位整合設計公司，由建築、室內設計、平面視覺設計師組成，核心是以人向思考設計及專案整合計畫的室內設計團隊。
@@ -73,7 +92,7 @@
                         </p>
 
                     </div>
-                    <div class="jspAboutEN">
+                    <div class="jspAboutEN" style="display: none;">
                         <P>n addition to the organic curves, JSC studio also used the geometric aesthetics on the
                             building volume. Stone
                             masonry provides both vertical and horizontal lines and creates the contrast visually. The
@@ -101,7 +120,7 @@
                             structure is carefully arranged for blank-leaving. The use of glass material contrasts with
                             cement structure
                     </div>
-
+                    <img class="logo" alt="">
                 </div>
 
             </div>
@@ -111,5 +130,15 @@
     <div id="footer"></div>
 </body>
 <script src="js/triangle.js"></script>
+<script>
+    $( ".jsp2en" ).click(function() {
+        $( ".jspAboutEN" ).css("display","inline-block");
+        $( ".jspAboutCHT" ).css("display","none");
+        });
+        $( ".jsp2cht" ).click(function() {
+        $( ".jspAboutCHT" ).css("display","inline-block");
+        $( ".jspAboutEN" ).css("display","none");
+        });
+</script>
 
 </html>

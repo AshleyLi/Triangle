@@ -14,6 +14,7 @@
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
     </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
     $(function(){
       $("#header").load("header.html");
@@ -22,258 +23,51 @@
     </script>
     <!-- /Load.. -->
     <!-- CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style-responsive.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/vertical-rhythm.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" herf="css/triangle.css">
-    <link rel="stylesheet" href="css/2019.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- /CSS -->
-
+    
 </head>
 <body>
-    <div class="container-fluid">
-        <!---   載入標頭   --->
-        <div id="header"></div>
-       <!--- 結束標頭 內文開始   ======================================================== --->
-        <!---  作品列表: 一 row 兩個  作品  --->
-        <div class="row row1">
- 
-          <div class="col-md-4  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/2.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p class=" mr-b-L">Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a>
+   <form method="POST">
+   <div class="container">
+     <div class="row">
+       <div class="col-12">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
           </div>
- 
-          <div class="col-md-4 col-md-offset-1  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/5.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a> </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         </div>
-        <div class="row row2">
- 
-          <div class="col-md-4  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/3.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a>
-          </div>
- 
-          <div class="col-md-4 col-md-offset-1  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/4.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a> </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
-        <div class="row row3">
- 
-          <div class="col-md-4  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/6.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a>
-          </div>
- 
-          <div class="col-md-4 col-md-offset-1  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/7.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a> </div>
-        </div>
-        <div class="row row4">
- 
-          <div class="col-md-4  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/8.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p class=" mr-b-L">Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a>
-          </div>
- 
-          <div class="col-md-4 col-md-offset-1  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/9.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a> </div>
-        </div>
-        <div class="row row5">
- 
-          <div class="col-md-4  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/10.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a>
-          </div>
- 
-          <div class="col-md-4 col-md-offset-1  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/11.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a> </div>
-        </div>
-        <div class="row row6">
- 
-          <div class="col-md-4  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/12.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a>
-          </div>
- 
-          <div class="col-md-4 col-md-offset-1  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/13.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a> </div>
-        </div>
-        <div class="row row7">
- 
-          <div class="col-md-4  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/14.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p class=" mr-b-L">Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a>
-          </div>
- 
-          <div class="col-md-4 col-md-offset-1  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/15.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a> </div>
-        </div>
-        <div class="row row8">
- 
-          <div class="col-md-4  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/16.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a>
-          </div>
- 
-          <div class="col-md-4 col-md-offset-1  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/17.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a> </div>
-        </div>
-        <div class="row row9">
- 
-          <div class="col-md-4  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/18.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a>
-          </div>
- 
-          <div class="col-md-4 col-md-offset-1  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/19.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a> </div>
-        </div>
-        <div class="row row10">
- 
-          <div class="col-md-4  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/20.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p class=" mr-b-L">Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a>
-          </div>
- 
-          <div class="col-md-4 col-md-offset-1  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/21.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a> </div>
-        </div>
-        <div class="row row11">
- 
-          <div class="col-md-4  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/22.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a>
-          </div>
- 
-          <div class="col-md-4 col-md-offset-1  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/23.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a> </div>
-        </div>
-        <div class="row row6">
- 
-          <div class="col-md-4  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/12.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a>
-          </div>
- 
-          <div class="col-md-4 col-md-offset-1  ">
-            <a href="" class="listitem">
-              <img src="images/650X836/13.jpg" class=" mr-b-L" alt="叁角設計 陳公館">
-              <p title="Project">w HOUSE</p>
-              <p>Taipei  100 m  / 2018</p>
-              <hr class="hideThis">
-            </a> </div>
-        </div>
-        <!--- /作品列表   --->
- 
- 
-       <!--- 內文結束 footer開始   ======================================================== --->
-       <div id="footer"></div>
-      </div>
- 
+       
+        <a href="#" class="btn btn-primary" onclick="sendEmail()">Send me a email!!!!</a>
+       
+       </div>
+     </div>
+   </div> 
+  </form>
+   <script src="https://smtpjs.com/v3/smtp.js">
+   </script>
+   <script>
+     function sendEmail() {
+      Email.send({
+
+          SecureToken : "694da786-73f8-4614-b000-03bb3a860991",
+          To : 'lilis1224@gmail.com',
+          From : "叁角設計<angletectec@gmail.com>",
+          Subject : "SMTPJS 測試成功",
+          Body : $( "#exampleInputEmail1" ).val() +"<h1>Hello world!!!</h1>"
+      }).then(
+        message => alert(message)
+      );
+      console.log("click!!!!");
+     }
+   </script>
 </body>
+
 </html>
